@@ -1,6 +1,12 @@
 def add_numbers(a:int, b:int) -> int:
     return a + b
 
+
+def var_args(name, **kvargs):
+	print(name)
+	print(kvargs['description'], kvargs['feedback'])
+
+
 print(add_numbers(5,13))
 print("Don't worry about conversions!")
 print(add_numbers(123,10.5))
@@ -40,3 +46,12 @@ for index in range(5,10,2):
     print(index)
 
 print('End value of x: {0}'.format(x))
+
+var_args("Mark",description = "Love Python", feedback = None, subscription = True )
+
+def double(x):
+	return x*2
+
+doubleLambda = lambda x: x * 2 
+
+print(double(5) == doubleLambda(5))
