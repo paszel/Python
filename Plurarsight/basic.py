@@ -37,7 +37,7 @@ students_names.append('Homer')
 
 'Homer' in students_names #true
 del students_names[2]
-students_names[1:] #skip first element Dont
+students_names[1:] #skip first element
 
 x=0
 print('Initial value of x: {0}'.format(x))
